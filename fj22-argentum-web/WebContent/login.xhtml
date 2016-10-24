@@ -5,17 +5,20 @@
 	xmlns:p="http://primefaces.org/ui">
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-	<title>Argentum Web</title>
+	<title>Login</title>
 </h:head>
 <h:body>
 	<h:form>
-		<p:outputLabel value="#{olaMundoBean.mensagem}" />
-		<br/>
-		<p:inputText value="#{olaMundoBean.nome}" />
-		<br/>
-		<p:outputLabel value="#{olaMundoBean.horario}" />
-		<br/>
-		<p:commandButton action="#{olaMundoBean.nomeFoiDigitado}" value="Ok" />
+		<p:panel style="width:40%; margin:auto; margin-top:15%">
+			<h:panelGrid columns="2" style="margin:auto">
+				<p:outputLabel value="Usuário:"/>
+				<p:inputText value=""/>
+				<p:outputLabel value="Senha:"/>
+				<p:inputText value=""/>
+				<p:outputLabel/>
+				<p:commandButton value="LOGIN" />
+			</h:panelGrid>
+		</p:panel>
 	</h:form>
 </h:body>
 </html>
